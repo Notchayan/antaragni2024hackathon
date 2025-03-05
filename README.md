@@ -39,12 +39,12 @@ graph TD
     B[API Gateway]
     C[Auth Service]
     D[Chat Service]
-    E[LLM Integration Service]
-    F[Session & Cache Service (Redis)]
-    G[Message Persistence Service (PostgreSQL)]
-    H[Task Queue (RabbitMQ/Kafka)]
+    E[LLM Service]
+    F[SessionCache (Redis)]
+    G[MessagePersistence (PostgreSQL)]
+    H[Task Queue]
     I[Logging & Monitoring]
-    
+
     A --> B
     B --> C
     B --> D
