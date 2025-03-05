@@ -32,3 +32,30 @@ Welcome to our NPCI Hackathon project focused on revolutionizing secure digital 
 
 ---
 *Join us in building the future of secure digital payments!*
+
+```mermaid
+graph TD
+    A[User Client]
+    B[API Gateway]
+    C[Auth Service]
+    D[Chat Service]
+    E[LLM Integration Service]
+    F[Session & Cache Service (Redis)]
+    G[Message Persistence Service (PostgreSQL)]
+    H[Task Queue (RabbitMQ/Kafka)]
+    I[Logging & Monitoring]
+    
+    A --> B
+    B --> C
+    B --> D
+    D --> E
+    D --> F
+    D --> G
+    D --> H
+    E --> H
+    F --> D
+    G --> D
+    D --> I
+    E --> I
+    C --> I
+```
