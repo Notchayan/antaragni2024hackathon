@@ -40,10 +40,10 @@ graph TD
     C[Auth Service]
     D[Chat Service]
     E[LLM Service]
-    F[SessionCache (Redis)]
-    G[MessagePersistence (PostgreSQL)]
+    F[SessionCache Redis]
+    G[MessagePersistence PostgreSQL]
     H[Task Queue]
-    I[Logging & Monitoring]
+    I[Logging and Monitoring]
 
     A --> B
     B --> C
